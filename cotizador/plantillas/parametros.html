@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testeo 2</title>
+        <style type="text/css">
+            li{
+                color:blue;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <h1>Parametros probando</h1>
+        <h2>Nombre del canaal: {{nombre}}</h2>
+        <h2>Fecha de hoy: {{fecha}}</h2>
+        <h2>
+            <ul>
+                {% for leng in lenguajes %}
+                {%if leng == "Python"%}
+                <li style='color:red'>{{leng}}</li>
+                {%else%}
+                <li>{{leng}}</li>
+                {%endif%}
+                {% endfor %}
+            </ul>
+        </h2>
+    </body>
+</html>
